@@ -1,0 +1,121 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Olado\\Downloads\\Blockchain Project\\BlockchainAssignment\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A7A15326-A321-4E6D-BC72-E4289D6DEF38}|BlockchainAssignment\\BlockchainAssignment.csproj|C:\\Users\\Olado\\Downloads\\Blockchain Project\\BlockchainAssignment\\blockchainassignment\\blockchainapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7A15326-A321-4E6D-BC72-E4289D6DEF38}|BlockchainAssignment\\BlockchainAssignment.csproj|solutionrelative:blockchainassignment\\blockchainapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7A15326-A321-4E6D-BC72-E4289D6DEF38}|BlockchainAssignment\\BlockchainAssignment.csproj|c:\\users\\olado\\downloads\\blockchain project\\blockchainassignment\\blockchainassignment\\block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7A15326-A321-4E6D-BC72-E4289D6DEF38}|BlockchainAssignment\\BlockchainAssignment.csproj|solutionrelative:blockchainassignment\\block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7A15326-A321-4E6D-BC72-E4289D6DEF38}|BlockchainAssignment\\BlockchainAssignment.csproj|c:\\users\\olado\\downloads\\blockchain project\\blockchainassignment\\blockchainassignment\\blockchainapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A7A15326-A321-4E6D-BC72-E4289D6DEF38}|BlockchainAssignment\\BlockchainAssignment.csproj|solutionrelative:blockchainassignment\\blockchainapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7A15326-A321-4E6D-BC72-E4289D6DEF38}|BlockchainAssignment\\BlockchainAssignment.csproj|c:\\users\\olado\\downloads\\blockchain project\\blockchainassignment\\blockchainassignment\\wallet\\wallet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7A15326-A321-4E6D-BC72-E4289D6DEF38}|BlockchainAssignment\\BlockchainAssignment.csproj|solutionrelative:blockchainassignment\\wallet\\wallet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7A15326-A321-4E6D-BC72-E4289D6DEF38}|BlockchainAssignment\\BlockchainAssignment.csproj|c:\\users\\olado\\downloads\\blockchain project\\blockchainassignment\\blockchainassignment\\blockchain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7A15326-A321-4E6D-BC72-E4289D6DEF38}|BlockchainAssignment\\BlockchainAssignment.csproj|solutionrelative:blockchainassignment\\blockchain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7A15326-A321-4E6D-BC72-E4289D6DEF38}|BlockchainAssignment\\BlockchainAssignment.csproj|c:\\users\\olado\\downloads\\blockchain project\\blockchainassignment\\blockchainassignment\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7A15326-A321-4E6D-BC72-E4289D6DEF38}|BlockchainAssignment\\BlockchainAssignment.csproj|solutionrelative:blockchainassignment\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Transaction.cs",
+              "DocumentMoniker": "C:\\Users\\Olado\\Downloads\\Blockchain Project\\BlockchainAssignment\\BlockchainAssignment\\Transaction.cs",
+              "RelativeDocumentMoniker": "BlockchainAssignment\\Transaction.cs",
+              "ToolTip": "C:\\Users\\Olado\\Downloads\\Blockchain Project\\BlockchainAssignment\\BlockchainAssignment\\Transaction.cs",
+              "RelativeToolTip": "BlockchainAssignment\\Transaction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T15:42:50.745Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BlockchainApp.cs",
+              "DocumentMoniker": "C:\\Users\\Olado\\Downloads\\Blockchain Project\\BlockchainAssignment\\BlockchainAssignment\\BlockchainApp.cs",
+              "RelativeDocumentMoniker": "BlockchainAssignment\\BlockchainApp.cs",
+              "ToolTip": "C:\\Users\\Olado\\Downloads\\Blockchain Project\\BlockchainAssignment\\BlockchainAssignment\\BlockchainApp.cs",
+              "RelativeToolTip": "BlockchainAssignment\\BlockchainApp.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAkwBMAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T14:40:11.924Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BlockchainApp.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Olado\\Downloads\\Blockchain Project\\BlockchainAssignment\\BlockchainAssignment\\BlockchainApp.cs",
+              "RelativeDocumentMoniker": "BlockchainAssignment\\BlockchainApp.cs",
+              "ToolTip": "C:\\Users\\Olado\\Downloads\\Blockchain Project\\BlockchainAssignment\\BlockchainAssignment\\BlockchainApp.cs [Design]",
+              "RelativeToolTip": "BlockchainAssignment\\BlockchainApp.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T14:36:11.853Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Blockchain.cs",
+              "DocumentMoniker": "C:\\Users\\Olado\\Downloads\\Blockchain Project\\BlockchainAssignment\\BlockchainAssignment\\Blockchain.cs",
+              "RelativeDocumentMoniker": "BlockchainAssignment\\Blockchain.cs",
+              "ToolTip": "C:\\Users\\Olado\\Downloads\\Blockchain Project\\BlockchainAssignment\\BlockchainAssignment\\Blockchain.cs",
+              "RelativeToolTip": "BlockchainAssignment\\Blockchain.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAkwEAAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T14:53:59.011Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Wallet.cs",
+              "DocumentMoniker": "C:\\Users\\Olado\\Downloads\\Blockchain Project\\BlockchainAssignment\\BlockchainAssignment\\Wallet\\Wallet.cs",
+              "RelativeDocumentMoniker": "BlockchainAssignment\\Wallet\\Wallet.cs",
+              "ToolTip": "C:\\Users\\Olado\\Downloads\\Blockchain Project\\BlockchainAssignment\\BlockchainAssignment\\Wallet\\Wallet.cs",
+              "RelativeToolTip": "BlockchainAssignment\\Wallet\\Wallet.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T15:28:25.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Block.cs",
+              "DocumentMoniker": "C:\\Users\\Olado\\Downloads\\Blockchain Project\\BlockchainAssignment\\BlockchainAssignment\\Block.cs",
+              "RelativeDocumentMoniker": "BlockchainAssignment\\Block.cs",
+              "ToolTip": "C:\\Users\\Olado\\Downloads\\Blockchain Project\\BlockchainAssignment\\BlockchainAssignment\\Block.cs",
+              "RelativeToolTip": "BlockchainAssignment\\Block.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGwAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T14:54:07.611Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
