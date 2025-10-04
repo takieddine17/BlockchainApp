@@ -59,20 +59,36 @@ namespace BlockchainAssignment
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Transaction newTransaction = new Transaction(publicKey.Text, receiver.Text, Double.Parse(amount.Text), Double.Parse(fee.Text), privateKey.Text);
+            Transaction newTransaction = new Transaction(publicKey.Text, receiver.Text, double.Parse(amount.Text), double.Parse(fee.Text), privateKey.Text);
+
+            blockchain.transactionPool.Add(newTransaction);
             richTextBox1.Text = newTransaction.ToString();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            List<Transaction> pendingTx = blockchain.GetPendingTransactions();
-            Block newBlock = new Block(blockchain.GetLastBlock(), pendingTx, publicKey.Text);
+            string preference = comboBox1.SelectedItem.ToString();
+            List<Transaction> pendingTx = blockchain.GetPendingTransactions(preference, publicKey.Text);
+            int currentDifficulty = blockchain.GetLastBlock().difficulty;
+            Block newBlock = new Block(blockchain.GetLastBlock(), pendingTx, publicKey.Text, currentDifficulty);
 
             blockchain.Blocks.Add(newBlock);
             richTextBox1.Text = newBlock.ToString();
         }
 
         private void button6_Click(object sender, EventArgs e)
+        {
+            string result = "BLOCKCHAIN:\n";
+
+            foreach (Block block in blockchain.Blocks)
+            {
+                result += block.ToString() + "\n\n";
+            }
+
+            richTextBox1.Text = result;
+        }
+
+        private void button7_Click(object sender, EventArgs e)
         {
             if (blockchain.transactionPool.Count == 0)
             {
@@ -85,18 +101,6 @@ namespace BlockchainAssignment
             foreach (Transaction tx in blockchain.transactionPool)
             {
                 result += tx.ToString() + "\n\n";
-            }
-
-            richTextBox1.Text = result;
-        }
-
-        private void button7_Click(object sender, EventArgs e)
-        {
-            string result = "";
-
-            foreach (Block block in blockchain.Blocks)
-            {
-                result += block.ToString() + "\n\n";
             }
 
             richTextBox1.Text = result;

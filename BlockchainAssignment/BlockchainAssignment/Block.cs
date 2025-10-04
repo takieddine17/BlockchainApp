@@ -5,6 +5,7 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Security.Policy;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace BlockchainAssignment
@@ -18,8 +19,9 @@ namespace BlockchainAssignment
         public List<Transaction> transactionList;
         public long nonce = 0;
         public int difficulty = 4;
-
-
+        private const int threadCount = 4;
+        private volatile bool solutionFound = false;
+        private object hashLock = new object();     
 
         public Block()
         {
@@ -45,12 +47,12 @@ namespace BlockchainAssignment
             this.hash = CreateHash();
         }
 
-        public Block(Block prevBlock, List<Transaction> transactions, string minerAddress)
+        public Block(Block prevBlock, List<Transaction> transactions, string minerAddress, int difficulty)
         {
             this.timestamp = DateTime.Now;
             this.index = prevBlock.index + 1;
             this.prevHash = prevBlock.hash;
-            this.difficulty = 4; 
+            this.difficulty = difficulty; 
 
             this.transactionList = new List<Transaction>(transactions);
 
@@ -63,7 +65,6 @@ namespace BlockchainAssignment
 
             this.hash = Mine();
         }
-
 
         public string CreateHash()
         {
@@ -91,17 +92,69 @@ namespace BlockchainAssignment
 
         public string Mine()
         {
-            nonce = 0;
-            string hash = CreateHash();
             string target = new string('0', difficulty);
+            string finalHash = "";
 
-            while (!hash.StartsWith(target))
+            Thread[] threads = new Thread[threadCount];
+
+            for (int i = 0; i < threadCount; i++)
             {
-                nonce++;
-                hash = CreateHash();
+                int threadId = i;
+                threads[i] = new Thread(() =>
+                {
+                    long localNonce = threadId;
+
+                    while (!solutionFound)
+                    {
+                        string candidateHash = CreateHashWithNonce(localNonce);
+
+                        if (candidateHash.StartsWith(target))
+                        {
+                            lock (hashLock)
+                            {
+                                if (!solutionFound)
+                                {
+                                    solutionFound = true;
+                                    nonce = localNonce;
+                                    finalHash = candidateHash;
+                                }
+                            }
+                            return;
+                        }
+
+                        localNonce += threadCount;
+                    }
+                });
+
+                threads[i].Start();
             }
 
-            return hash;
+            foreach (Thread t in threads)
+            {
+                t.Join(); 
+            }
+
+            return finalHash;
+        }
+
+        private string CreateHashWithNonce(long testNonce)
+        {
+            using (SHA256 hasher = SHA256.Create())
+            {
+                string transactionsData = "";
+
+                if (transactionList != null)
+                {
+                    foreach (Transaction t in transactionList)
+                    {
+                        transactionsData += t.ToString();
+                    }
+                }
+
+                string input = index.ToString() + timestamp.ToString() + prevHash + testNonce + transactionsData;
+                byte[] hashBytes = hasher.ComputeHash(Encoding.UTF8.GetBytes(input));
+                return BitConverter.ToString(hashBytes).Replace("-", "").ToLower();
+            }
         }
 
         public override string ToString()

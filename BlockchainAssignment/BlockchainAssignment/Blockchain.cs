@@ -11,6 +11,8 @@ namespace BlockchainAssignment
         public List<Block> Blocks;
         public List<Transaction> transactionPool = new List<Transaction>();
         private int transactionsPerBlock = 5;
+        public int targetBlockTime = 10;
+        public DateTime lastBlockTimestamp;
 
         public Blockchain()
         {
@@ -18,6 +20,8 @@ namespace BlockchainAssignment
             {
                 new Block()
             };
+
+            lastBlockTimestamp = DateTime.Now;
         }
 
         public String getBlockAsString(int index)
@@ -32,11 +36,55 @@ namespace BlockchainAssignment
             return Blocks[Blocks.Count - 1];
         }
 
-        public List<Transaction> GetPendingTransactions()
+        public List<Transaction> GetPendingTransactions(string preference, string userAddress)
         {
-            int count = Math.Min(transactionsPerBlock, transactionPool.Count);
-            List<Transaction> selected = transactionPool.GetRange(0, count);
+            List<Transaction> sortedPool = new List<Transaction>(transactionPool);
+
+            // Sort transaction pool based on mining preference
+            switch (preference)
+            {
+                case "Greedy":
+                    sortedPool = sortedPool.OrderByDescending(tx => tx.fee).ToList();
+                    break;
+
+                case "Altruistic":
+                    sortedPool = sortedPool.OrderBy(tx => tx.timestamp).ToList();
+                    break;
+
+                case "Random":
+                    Random rng = new Random();
+                    sortedPool = sortedPool.OrderBy(_ => rng.Next()).ToList();
+                    break;
+
+                case "Address Preference":
+                    sortedPool = sortedPool
+                        .OrderByDescending(tx => tx.senderAddress == userAddress || tx.recipientAddress == userAddress)
+                        .ThenByDescending(tx => tx.fee)
+                        .ToList();
+                    break;
+            }
+
+            int count = Math.Min(transactionsPerBlock, sortedPool.Count);
+            List<Transaction> selected = sortedPool.GetRange(0, count);
+
             transactionPool = transactionPool.Except(selected).ToList();
+
+            DateTime now = DateTime.Now;
+            double secondsTaken = (now - lastBlockTimestamp).TotalSeconds;
+            lastBlockTimestamp = now;
+
+            Block lastBlock = Blocks[Blocks.Count - 1];
+            int targetBlockTime = 10; // seconds
+
+            if (secondsTaken < targetBlockTime)
+            {
+                lastBlock.difficulty += 1;
+            }
+            else if (secondsTaken > targetBlockTime)
+            {
+                lastBlock.difficulty = Math.Max(1, lastBlock.difficulty - 1);
+            }
+
             return selected;
         }
 

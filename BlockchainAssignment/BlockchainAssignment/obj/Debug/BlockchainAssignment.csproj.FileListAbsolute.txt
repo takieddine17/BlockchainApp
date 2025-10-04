@@ -28,3 +28,14 @@ C:\Users\Olado\Downloads\Blockchain Project\BlockchainAssignment\BlockchainAssig
 C:\Users\Olado\Downloads\Blockchain Project\BlockchainAssignment\BlockchainAssignment\obj\Debug\BlockchainAssignment.csproj.CoreCompileInputs.cache
 C:\Users\Olado\Downloads\Blockchain Project\BlockchainAssignment\BlockchainAssignment\obj\Debug\BlockchainAssignment.exe
 C:\Users\Olado\Downloads\Blockchain Project\BlockchainAssignment\BlockchainAssignment\obj\Debug\BlockchainAssignment.pdb
+C:\Users\moham\Downloads\BlockchainProject\Blockchain Project\BlockchainAssignment\BlockchainAssignment\bin\Debug\BlockchainAssignment.exe.config
+C:\Users\moham\Downloads\BlockchainProject\Blockchain Project\BlockchainAssignment\BlockchainAssignment\bin\Debug\BlockchainAssignment.exe
+C:\Users\moham\Downloads\BlockchainProject\Blockchain Project\BlockchainAssignment\BlockchainAssignment\bin\Debug\BlockchainAssignment.pdb
+C:\Users\moham\Downloads\BlockchainProject\Blockchain Project\BlockchainAssignment\BlockchainAssignment\obj\Debug\BlockchainAssignment.csproj.AssemblyReference.cache
+C:\Users\moham\Downloads\BlockchainProject\Blockchain Project\BlockchainAssignment\BlockchainAssignment\obj\Debug\BlockchainAssignment.csproj.SuggestedBindingRedirects.cache
+C:\Users\moham\Downloads\BlockchainProject\Blockchain Project\BlockchainAssignment\BlockchainAssignment\obj\Debug\BlockchainAssignment.BlockchainApp.resources
+C:\Users\moham\Downloads\BlockchainProject\Blockchain Project\BlockchainAssignment\BlockchainAssignment\obj\Debug\BlockchainAssignment.Properties.Resources.resources
+C:\Users\moham\Downloads\BlockchainProject\Blockchain Project\BlockchainAssignment\BlockchainAssignment\obj\Debug\BlockchainAssignment.csproj.GenerateResource.cache
+C:\Users\moham\Downloads\BlockchainProject\Blockchain Project\BlockchainAssignment\BlockchainAssignment\obj\Debug\BlockchainAssignment.csproj.CoreCompileInputs.cache
+C:\Users\moham\Downloads\BlockchainProject\Blockchain Project\BlockchainAssignment\BlockchainAssignment\obj\Debug\BlockchainAssignment.exe
+C:\Users\moham\Downloads\BlockchainProject\Blockchain Project\BlockchainAssignment\BlockchainAssignment\obj\Debug\BlockchainAssignment.pdb
