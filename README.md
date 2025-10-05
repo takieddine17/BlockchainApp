@@ -1,6 +1,6 @@
 # Blockchain App
 
-# BlockchainApp
+## Description
 
 A Windows Forms application demonstrating blockchain concepts in a simple and interactive way. This app allows users to explore how blocks, hashing, and transactions work, all through a user-friendly interface.
 
@@ -17,7 +17,7 @@ A Windows Forms application demonstrating blockchain concepts in a simple and in
 
 You can download the latest version of the app here:
 
-[Download BlockchainApp v1.0](https://github.com/YourUsername/YourRepo/releases/download/v1.0/BlockchainApp.zip)
+[Download BlockchainApp v1.0](https://github.com/takieddine17/BlockchainApp/releases/download/v1.0/BlockchainApplication.zip)
 
 ## How to Run
 
